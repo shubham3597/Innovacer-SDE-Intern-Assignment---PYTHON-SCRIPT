@@ -26,3 +26,10 @@ The data in the database can be subject to change and was being pushed only for 
 
 This script also handles the errors, validations and no response cases as well. It is being written in a well structured and properly formatted manner
 
+<h1>For Development Purposes</h1>
+# PLEASE DO NOT FORGET TO INITIALSE THE `MY_ADDRESS = 'YOUR_GMAIL_ID'` & `PASSWORD = 'YOUR_PASSWORD'` ON LINE 24 & 25 RESPECTIVELY WITH YOUR DESIRED CREDENTIALS SO AS TO BE THE SENDER OF THE EMAIL
+# ALSO THE SERVER IS USING GMAIL SMTP CLIENT THEREFORE, PLEASE TURN ON THE ACCESS TO LESS SECURE APPS UNDER YOUR GMAIL ACCOUNT SETTINGS.
+
+If you want to work with your `localDB` kindly import the `innovacer.sql` database into your system and accordingly change your settings from `line 27-31`
+
+
