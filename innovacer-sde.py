@@ -59,15 +59,24 @@ def main():
         # print('List of TV Series', tvSeriesList)
         print ('\n')
 
+        for item in tvSeriesList:
+            query = "insert into email_responses values (%s, %s)"
+            response = (str(emailId),str(item).upper())
+
+            dbCursor.execute(query, response)
+
+            db.commit()
+
+
         rowCount = 0
         # adding the message to the message template
         message = ''
 
         for item in tvSeriesList:
 
-            query = "SELECT * FROM TV_SERIES where TV_SERIES_NAME = %s" 
+            query_select = "SELECT * FROM TV_SERIES where TV_SERIES_NAME = %s" 
 
-            dbCursor.execute(query, (str(item).upper(), ))
+            dbCursor.execute(query_select, (str(item).upper(), ))
 
             dbResult = dbCursor.fetchall()
 
