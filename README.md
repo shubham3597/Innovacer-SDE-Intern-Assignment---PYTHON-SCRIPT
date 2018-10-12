@@ -7,10 +7,10 @@ It records the input EMAIL ID and SHOW RESPONSE and store it in the `email_respo
 Our MySQL Database is hosted on the GEARHOST Server and following are the credentials of the Database 
 accession(Kindly use `PHP MyAdmin` or `MySQL Workbench` to suffice the need)<br />
 
-    host = "den1.mysql6.gear.host"<br />
-    user ="innovaccersde"<br />
-    passwd = "Vr99w8w?~8Su"<br />
-    database = "innovaccersde"<br />
+    host = "den1.mysql6.gear.host"
+    user ="innovaccersde"
+    passwd = "Vr99w8w?~8Su"
+    database = "innovaccersde"
 
 Also a single email is being sent to the input email address with all the
 appropriate response for every TV series. It fetches the content right away from the `tv_series` table and the content of the mail could
