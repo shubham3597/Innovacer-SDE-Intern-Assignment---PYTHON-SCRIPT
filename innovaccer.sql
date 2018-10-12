@@ -1,0 +1,55 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.9
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1:3306
+-- Generation Time: Oct 12, 2018 at 12:37 PM
+-- Server version: 5.7.18-log
+-- PHP Version: 5.6.35
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `innovaccer`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tv_series`
+--
+
+DROP TABLE IF EXISTS `tv_series`;
+CREATE TABLE IF NOT EXISTS `tv_series` (
+  `TV_SERIES_NAME` varchar(50) DEFAULT NULL,
+  `NEXT_EPISODE` tinyint(1) DEFAULT NULL,
+  `NEXT_EPISODE_DATE` date DEFAULT NULL,
+  `NEXT_SEASON` tinyint(1) DEFAULT NULL,
+  `NEXT_SEASON_YEAR` date DEFAULT NULL,
+  `FINISHED_STREAMING` tinyint(1) DEFAULT NULL,
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tv_series`
+--
+
+INSERT INTO `tv_series` (`TV_SERIES_NAME`, `NEXT_EPISODE`, `NEXT_EPISODE_DATE`, `NEXT_SEASON`, `NEXT_SEASON_YEAR`, `FINISHED_STREAMING`, `ID`) VALUES
+('GAME OF THRONES', 1, '2019-04-01', 1, '2019-04-01', 0, 101),
+('NARCOS', 0, NULL, 1, '2019-01-01', 0, 102),
+('FRIENDS', 0, NULL, 0, NULL, 1, 103);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
